@@ -1,13 +1,11 @@
-#summary One-sentence summary of this page.
+#summary Download
 
-= Introduction =
+= Download =
 
-Add your content here.
+You can download the latest JAR file (about 50KB+) including source code from here:
 
+[http://code.google.com/p/jopenid/downloads/list]
 
-= Details =
+To get the latest source code, check out from SVN follow the instruction:
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+[http://code.google.com/p/jopenid/source/checkout]

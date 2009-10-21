@@ -3,3 +3,4 @@
  * [QuickStart Quick Start]
  * [DevGuide Developer's Guide]
  * [FAQ FAQ]
+ * [MichaelLiao About the Author]
