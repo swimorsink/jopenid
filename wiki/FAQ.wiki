@@ -1,13 +1,38 @@
-#summary Developer's Guide
+#summary FAQ
 
-= Developer's Guide =
+= FAQ =
 
-Add your content here.
+Here are some issues you may encounter when using JOpenID.
+
+= How to specify realm =
+
+The realm must start with `http://` or `https://`. For example:
+
+manager.setRealm("http://www.example.com");
+manager.setRealm("http://*.example.com");
+
+The importance is that, the Identifier of an end user (returned by OP) is different if the realm changes. For example:
+
+|| *Realm* || *Identifier* ||
+|| http://www.example.com || http://www.google.com/accounts/o8/id?id=ABC ||
+|| http://*.example.com || http://www.google.com/accounts/o8/id?id=XYZ ||
+
+If your web site has sub-domains such as `bbs.example.com`, `blog.example.com`, etc., we 
+strongly recommend you specify the realm as `http://*.example.com` to make all domains share one identifier.
+
+= How to debug on local machine =
+
+Assume that you have own the domain `example.com`, and to debug the web application you can simply add one line in your `hosts` file:
+
+{{{
+www.example.com 127.0.0.1
+}}}
+
+Then you can debug on local machine.
+
+The file `hosts` is under `C:\Windows\System32\drivers\etc` in Windows, and `/etc/hosts` in Linux/UNIX.
+
+= I saw some web sites allow users enter their emails to locate the OP sign on page =
 
 
-= Details =
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
