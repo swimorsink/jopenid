@@ -5,9 +5,9 @@
 This demonstration shows how JOpenID works, and it let an end user sign on by their Google account. 
 Note that the Google account is an OpenID provider.
 
-This sample can be found here.
+This sample Java class file can be found [http://code.google.com/p/jopenid/source/browse/trunk/JOpenId/src/org/expressme/openid/Main.java here].
 
-Let's start with a main():
+Let's start with a `main()`:
 
 {{{
 public void main() throws Exception {
