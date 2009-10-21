@@ -1,0 +1,37 @@
+#summary Overview of JOpenID
+#labels Featured
+
+= Overview =
+
+JOpenID is a very fast, lightweight Java client library for 
+OpenID 2.0 specification. You can use JOpenID in your web site to 
+enable users sign on by their OpenID account without registration.
+
+
+= Features =
+
+
+  * Text in *bold* or _italic_
+  * Headings, paragraphs, and lists
+  * Automatic links to other wiki pages
+
+= Terminology =
+
+== OpenID ==
+
+OpenID authentication provides a way to prove that an end user owns an Identifier. 
+A web site does not need to access to end user credentials such as a password or 
+to other sensitive information such as an email address.
+
+== Identifier ==
+
+An Identifier that was presented by the end user to your web site.
+
+== OP ==
+
+OP stands for OpenID Provider. An OP authentication server is which your web site relies for an assertion that 
+the end user owns an Identifier.
+
+== RP ==
+
+RP stands for Relying Party. It is your web site which want to use OpenID authentication.
