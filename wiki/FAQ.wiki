@@ -8,8 +8,10 @@ Here are some issues you may encounter when using JOpenID.
 
 The realm must start with `http://` or `https://`. For example:
 
+{{{
 manager.setRealm("http://www.example.com");
 manager.setRealm("http://*.example.com");
+}}}
 
 The importance is that, the Identifier of an end user (returned by OP) is different if the realm changes. For example:
 
@@ -32,7 +34,17 @@ Then you can debug on local machine.
 
 The file `hosts` is under `C:\Windows\System32\drivers\etc` in Windows, and `/etc/hosts` in Linux/UNIX.
 
-= I saw some web sites allow users enter their emails to locate the OP sign on page =
+= I saw some web sites allow users enter their emails or URLs to find the OP's sign on page =
 
+Yes OpenID standards contains two parts: *discovery* and *authentication*. Discovery is the process where the RP uses email or URL to look up the address of OP. 
+It is complex, and may confuse the end users.
 
+Instead, Web UI designer should give end users the chooses of their familiar OpenID accounts, such as Google account, Yahoo account, etc.
 
+JOpenID only supports OpenID authentication because the discovery protocol is hard to use, and difficult to implement. You will find that JOpenID meets your 99.9% requirements.
+
+= How can I add more OpenID Providers =
+
+As we discussed before, JOpenID does not support discovery, which means you should provide a list of OPs to end users. 
+All OPs are list in `openid-providers.properties` file. If you want to add more OPs, try to find their URL with a little effort. 
+If you think JOpenID should contain more popular OPs, please add a comment with the OP's URL.
