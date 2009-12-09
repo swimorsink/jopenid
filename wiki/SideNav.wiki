@@ -4,3 +4,4 @@
  * [DevGuide Developer's Guide]
  * [FAQ FAQ]
  * [MichaelLiao About the Author]
+ * [ConfigExt Updates]
