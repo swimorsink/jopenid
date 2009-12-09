@@ -6,7 +6,7 @@ Even during JOpenID`'`s intial release, support for OpenID Attribute Exchange is
 
 == How to use this new feature ==
 
-Using the MainServlet from [Developer's Guide] as our basis we modify it to look this way
+Using the MainServlet from [DevGuide Developer's Guide] as our basis we modify it to look this way
 {{{
 @Override
 protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
