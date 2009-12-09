@@ -63,7 +63,7 @@ void showAuthentication(PrintWriter pw, Authentication user) {
     pw.flush();
 }
 }}}
-Do not forget to also modify the `MainServlet``'`s `doGet` method like this:
+Do not forget to also modify the `MainServlet``'`s `doGet` method where `showAuthentication` is used:
 {{{
     .
     .
@@ -73,7 +73,10 @@ Do not forget to also modify the `MainServlet``'`s `doGet` method like this:
     .
     .
 }}}
-= Details =
+
+== Sample Web Application ==
+
+Here`'`s a demo application running on Google App Engine. 
 
 Add your content here.  Format your content with:
   * Text in *bold* or _italic_
