@@ -51,19 +51,28 @@ We also added new properties to the `Authentication` class. Aside from `email` y
 Using again the `MainServlet` from [DevGuide Developer's Guide] as our basis, we modify it`'`s `showAuthentication` method to now look this way:
 {{{
 void showAuthentication(PrintWriter pw, Authentication user) {
-   pw.print("<html><body>");
-   pw.print(" <h2>Hi "+user.getFullname()+"!</h2><p>Congratulations, you have successfully logged-in using openid!</p>");
-   pw.print("<p><b>Indentity:</b> "+user.getIdentity()+"<br>");
-   pw.print("<b>Email:</b> "+user.getEmail()+"<br>");
-   pw.print("<b>Gender:</b> "+user.getGender()+"<br>");
-   pw.print("<b>Firstname:</b> "+user.getFirstname()+"<br>");
-   pw.print("<b>Lastname:</b> "+user.getLastname()+"<br>");
-   pw.print("<b>Language:</b> "+user.getLanguage()+"</p>");
-   pw.print("</body></html>");
-   pw.flush();
+    pw.print("<html><body>");
+    pw.print(" <h2>Hi "+user.getFullname()+"!</h2><p>Congratulations, you have successfully logged-in!</p>");
+    pw.print("<p><b>Indentity:</b> "+user.getIdentity()+"<br>");
+    pw.print("<b>Email:</b> "+user.getEmail()+"<br>");
+    pw.print("<b>Gender:</b> "+user.getGender()+"<br>");
+    pw.print("<b>Firstname:</b> "+user.getFirstname()+"<br>");
+    pw.print("<b>Lastname:</b> "+user.getLastname()+"<br>");
+    pw.print("<b>Language:</b> "+user.getLanguage()+"</p>");
+    pw.print("</body></html>");
+    pw.flush();
 }
 }}}
-
+Do not forget to also modify the `MainServlet``'`s `doGet` method like this:
+{{{
+    .
+    .
+    Authentication authentication = manager.getAuthentication(request, mac_key, alias);
+    // TODO: create user if not exist in database:
+    showAuthentication(response.getWriter(), authentication);
+    .
+    .
+}}}
 = Details =
 
 Add your content here.  Format your content with:
