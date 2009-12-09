@@ -5,7 +5,7 @@
 
 JOpenID is a very fast, lightweight Java client library for 
 OpenID 2.0 specification. You can use JOpenID in your web site to 
-enable users sign on by their OpenID account without registration.
+enable users sign on using their OpenID account without registration.
 
 See [QuickStart Quick Start] to learn how JOpenID works.
 
@@ -31,3 +31,7 @@ the end user owns an Identifier.
 == RP ==
 
 RP stands for Relying Party. It is your web site which want to use OpenID authentication.
+
+== Alias ==
+
+Alias refers to the extension namespace alias used by RP when requesting aditional information through OpenId's Attribute Exchange.
