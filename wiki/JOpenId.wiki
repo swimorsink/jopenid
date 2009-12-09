@@ -5,7 +5,7 @@
 
 JOpenID is a very fast, lightweight Java client library for 
 OpenID 2.0 specification. You can use JOpenID in your web site to 
-enable users sign on using their OpenID account without registration.
+enable users to sign on using their OpenID account without registration.
 
 See [QuickStart Quick Start] to learn how JOpenID works.
 
