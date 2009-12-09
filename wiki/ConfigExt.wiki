@@ -63,7 +63,7 @@ void showAuthentication(PrintWriter pw, Authentication user) {
     pw.flush();
 }
 }}}
-Do not forget to also modify the `MainServlet``'`s `doGet` method where `showAuthentication` is used:
+Do not forget to also modify the `MainServlet``'`s `doGet` method where a call to `showAuthentication` is used:
 {{{
     .
     .
