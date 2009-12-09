@@ -74,6 +74,6 @@ Do not forget to also modify the `MainServlet``'`s `doGet` method where a call t
     .
 }}}
 
-== Sample Web Application ==
+== 3. Sample Web Application ==
 
 Here`'`s a demo application running on Google App Engine. [http://jopenid-demo.appspot.com jopenid-demo]
