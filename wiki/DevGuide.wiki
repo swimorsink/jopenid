@@ -37,7 +37,7 @@ protected void doGet(HttpServletRequest request, HttpServletResponse response) t
 }
 }}}
 
-We assumes that the `MainServlet` above has been mapped to `/openid` in our web application:
+We assume that the `MainServlet` above has been mapped to `/openid` in our web application:
 
 If user requests URL `/openid?op=Google`, then the MainServlet will redirect user to the Google's sign on page, and store the mac key of current association into HttpSession for later use.
 
