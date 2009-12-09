@@ -2,7 +2,7 @@
 
 == Configurable Extension Namespace Alias ==
 
-Even during JOpenID`'`s intial release, support for OpenID Attribute Exchange is already available. The extension namespace alias used a hard-coded value of ext1. It was to do this Ok back then because Yahoo still doesn't support OpenID Attribute Exchange during those times. But now that Yahoo already does, we did some test and found out Yahoo has it`'`s own extension namespace alias requirement. As an RP connecting to Yahoo for OpenID authentication you must use this specific alias or else you won`'`t be able to query any info aside from the Identity. That's why in this version of JOpenID we decided to add support for configurable extension namespace aliases to solve this issue.
+Even during JOpenID`'`s intial release, support for OpenID Attribute Exchange is already available. The extension namespace alias used a hard-coded value of *_ext1_*. It was to do this Ok back then because Yahoo still doesn't support OpenID Attribute Exchange during those times. But now that Yahoo already does, we did some test and found out Yahoo has it`'`s own extension namespace alias requirement. As an RP connecting to Yahoo for OpenID authentication you must use this specific alias or else you won`'`t be able to query any info aside from the Identity. That's why in this version of JOpenID we decided to add support for configurable extension namespace aliases to solve this issue.
 
 
 
