@@ -44,7 +44,7 @@ Notice that we are now storing two attributes in session. One is the ATTR_MAC an
 
 == Additional Attributes ==
 
-We also added new properties to the `Authentication` class. Aside from `email` you can now also get the `fullname`, `firstname`, `lastname`, `language`, and `gender` if they are supported by the chosen OP at runtime.
+On this version of JOpenID we also added new properties to the `Authentication` class. Aside from `email` you can now also get the `fullname`, `firstname`, `lastname`, `language`, and `gender` as long as they are supported by the chosen OP at runtime.
 
 === How to use this new feature ===
 
