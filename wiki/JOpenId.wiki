@@ -11,6 +11,8 @@ See [QuickStart Quick Start] to learn how JOpenID works.
 
 See [DevGuide Developer's Guide] to learn how to use JOpenID in Java web applications.
 
+See [ConfigExt Updates] to learn more about the new features in latest version.
+
 = Terminology =
 
 == OpenID ==
