@@ -15,9 +15,7 @@ See [DevGuide Developer's Guide] to learn how to use JOpenID in Java web applica
 
 == OpenID ==
 
-OpenID authentication provides a way to prove that an end user owns an Identifier. 
-A web site does not need to access to end user credentials such as a password or 
-to other sensitive information such as an email address.
+OpenID is an open, decentralized standard for authenticating users which can be used for access control, allowing users to log on to different services with the same digital identity where these services trust the authentication body.
 
 == Identifier ==
 
