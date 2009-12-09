@@ -6,7 +6,41 @@ Even during JOpenID`'`s intial release, support for OpenID Attribute Exchange is
 
 == How to use this new feature ==
 
-
+Using the MainServlet from [Developer's Guide] as our basis we modify it to look this way
+{{{
+@Override
+protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    String op = request.getParameter("op");
+    if (op==null) {
+        // check nonce:
+        checkNonce(request.getParameter("openid.response_nonce"));
+        // get authentication:
+        HttpSession session = request.getSession();
+        byte[] mac_key = (byte[]) session.getAttribute(ATTR_MAC);
+        String alias = (String) session.getAttribute(ATTR_ALIAS);
+        Authentication authentication = manager.getAuthentication(request, mac_key, alias);
+        String identity = authentication.getIdentity();
+        String email = authentication.getEmail();
+        // TODO: create user if not exist in database:
+        showAuthentication(response.getWriter(), identity, email);
+    }
+    else if ("Google".equals(op) || "Yahoo".equals(op)) {
+        // redirect to Google/Yahoo sign on page:
+        String alias = manager.lookupExtNsAlias(op);
+        Endpoint endpoint = manager.lookupEndpoint(op);
+        Association association = manager.lookupAssociation(endpoint);
+        HttpSession session = request.getSession();
+        session.setAttribute(ATTR_MAC, association.getRawMacKey());
+        session.setAttribute(ATTR_ALIAS, alias);
+        String url = manager.getAuthenticationUrl(endpoint, association);
+        response.sendRedirect(url);
+    }
+    else {
+        throw new ServletException("Bad parameter op=" + op);
+    }
+}
+}}}
+Notice that we are now storing two attributes in session. One is the ATTR_MAC and the other one is ATTR_ALIAS. The getAuthentication method also has an added new parameter which is the alias we stored from the session.
 
 = Details =
 
