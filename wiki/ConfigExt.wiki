@@ -6,7 +6,7 @@ Even during JOpenID`'`s intial release, support for OpenID Attribute Exchange is
 
 === How to use this new feature ===
 
-Using the `MainServlet` from [DevGuide Developer's Guide] as our basis, we modify `doGet` to now look this way:
+Using the `MainServlet` from [DevGuide Developer's Guide] as our basis, we modify it`'`s `doGet` to now look this way:
 {{{
 @Override
 protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -48,7 +48,22 @@ We also added new properties to the `Authentication` class. Aside from `email` y
 
 === How to use this new feature ===
 
-We also use 
+Using again the `MainServlet` from [DevGuide Developer's Guide] as our basis, we modify it`'`s `showAuthentication` method to now look this way:
+{{{
+void showAuthentication(PrintWriter pw, Authentication user) {
+   pw.print("<html><body>");
+   pw.print(" <h2>Hi "+user.getFullname()+"!</h2><p>Congratulations, you have successfully logged-in using openid!</p>");
+   pw.print("<p><b>Indentity:</b> "+user.getIdentity()+"<br>");
+   pw.print("<b>Email:</b> "+user.getEmail()+"<br>");
+   pw.print("<b>Gender:</b> "+user.getGender()+"<br>");
+   pw.print("<b>Firstname:</b> "+user.getFirstname()+"<br>");
+   pw.print("<b>Lastname:</b> "+user.getLastname()+"<br>");
+   pw.print("<b>Language:</b> "+user.getLanguage()+"</p>");
+   pw.print("</body></html>");
+   pw.flush();
+}
+}}}
+
 = Details =
 
 Add your content here.  Format your content with:
