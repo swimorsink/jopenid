@@ -32,4 +32,4 @@ RP stands for Relying Party. It is your web site which want to use OpenID authen
 
 == Alias ==
 
-Alias refers to the extension namespace alias used by RP when requesting aditional information through OpenId Attribute Exchange.
+Alias refers to the extension namespace alias used by RP when requesting aditional information through OpenID Attribute Exchange.
