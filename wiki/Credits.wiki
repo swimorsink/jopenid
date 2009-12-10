@@ -1,6 +1,6 @@
 #summary About the authors.
 
-<table><tr><td>
+<table><tr><td valign="top">
 = Michael Liao =
 
 Michael Liao has 5-year JavaEE development experiences, and also work with a 
