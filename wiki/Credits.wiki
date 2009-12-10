@@ -21,3 +21,11 @@ http://jopenid.googlecode.com/svn/wiki/michael-liao-book.png
 </td></tr></table>
 
 = Erwin Quinto =
+
+Erwin is a Senior Software Engineer working with Java technologies for the last five years. Erwin started to used JavaEE in 2003 and since then has been involved in numerous projects for various small and large clients such as Retail Marketing Solutions, Jewelmer, International Organization for Migration, and others. Erwin has gained vast experience with enterprise scale applications, build technologies, software engineering, and agile methodologies. Erwin holds a BS in Information Technology from Saint Louis University.
+
+You can contact him at:
+
+erwin.quinto@gmail.com
+
+erwin.quinto@98labs.com
