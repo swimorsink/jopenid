@@ -40,7 +40,7 @@ protected void doGet(HttpServletRequest request, HttpServletResponse response) t
     }
 }
 }}}
-Notice that we are now storing two attributes in session. One is the `ATTR_MAC` and the other one is `ATTR_ALIAS`. The `getAuthentication` method also has an added new parameter, alias we stored in the session from the previous call.
+Notice that we are now storing two attributes in session. One is the `ATTR_MAC` and the other one is `ATTR_ALIAS`. The `getAuthentication` method also has an added new parameter, the alias we stored in the session from the previous call.
 
 == 2. Additional Attributes ==
 
