@@ -1,5 +1,6 @@
 #summary About the authors.
 
+<table><tr><td width="40%">
 = Michael Liao =
 
 Michael Liao has 5-year JavaEE development experiences, and also work with a 
@@ -8,12 +9,15 @@ several articles in BEA dev2dev China and IBM developerWorks China. His
 "[http://www.livebookstore.net Spring 2.0 Core Technology and Best Practices]" 
 is one of the popular Java books in China:
 
-http://jopenid.googlecode.com/svn/wiki/michael-liao-book.png
-
 His official blogs are:
+
 Chinese: [http://www.liaoxuefeng.com]
+
 English: [http://michael.liaoxuefeng.com]
 
 You can [mailto:askxuefeng@gmail.com send mail to him].
+</td><td>
+http://jopenid.googlecode.com/svn/wiki/michael-liao-book.png
+</td></tr></table>
 
 = Erwin Quinto =
