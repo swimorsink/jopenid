@@ -26,12 +26,11 @@ protected void doGet(HttpServletRequest request, HttpServletResponse response) t
     }
     else if ("Google".equals(op) || "Yahoo".equals(op)) {
         // redirect to Google/Yahoo sign on page:
-        String alias = manager.lookupExtNsAlias(op);
         Endpoint endpoint = manager.lookupEndpoint(op);
         Association association = manager.lookupAssociation(endpoint);
         HttpSession session = request.getSession();
         session.setAttribute(ATTR_MAC, association.getRawMacKey());
-        session.setAttribute(ATTR_ALIAS, alias);
+        session.setAttribute(ATTR_ALIAS, endpoint.getAlias());
         String url = manager.getAuthenticationUrl(endpoint, association);
         response.sendRedirect(url);
     }
