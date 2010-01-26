@@ -6,4 +6,4 @@
  * [Download Download]
  * [Credits About the Authors]
 
-[http://www.facebook.com/group.php?gid=257758216685 http://jopenid.googlecode.com/svn/wiki/fuofo.png]
+ * [http://www.facebook.com/group.php?gid=257758216685 http://jopenid.googlecode.com/svn/wiki/fuofo.png]
