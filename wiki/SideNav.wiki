@@ -5,6 +5,7 @@
  * [FAQ FAQ]
  * [Download Download]
  * [Credits About the Authors]
+<br>
 <table width="155"><tr><td align="center">[http://www.facebook.com/group.php?gid=257758216685 http://jopenid.googlecode.com/svn/wiki/fuofo.png]
 </td></tr></table>
-<br><br>
+<br>
