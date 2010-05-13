@@ -1,6 +1,7 @@
 #summary Overview of JOpenID
 #labels Featured
 
+<table><tr><td>
 = Overview =
 
 JOpenID is a very fast, lightweight Java client library for 
@@ -12,7 +13,8 @@ See [QuickStart Quick Start] to learn how JOpenID works.
 See [DevGuide Developer's Guide] to learn how to use JOpenID in Java web applications.
 
 See [ConfigExt Updates] to learn more about the new features included in the latest version of JOpenID.
-
+</td><td><wiki:gadget url="http://www.ohloh.net/p/317293/widgets/project_basic_stats.xml" height="220" border="1"/>
+</td></tr></table>
 = Terminology =
 
 == OpenID ==
