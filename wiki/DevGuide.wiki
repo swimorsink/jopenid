@@ -90,3 +90,13 @@ You may list all OPs in sign on page to let users choose their OpenID accounts. 
   <p><a href="/openid?op=Google">Google Account</a></p>
   <p><a href="/openid?op=Yahoo">Yahoo Account</a></p>
 }}}
+
+= How to build JOpenID =
+
+JOpenID uses Maven 2 since 1.08. You need install [http://maven.apache.org/ Maven 2.2] first, and run following command to build:
+
+{{{
+C:\workspace\JOpenID> mvn package
+}}}
+
+The target jar and packaged source jar can be found in 'target' directory.
