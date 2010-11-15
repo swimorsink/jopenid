@@ -2,7 +2,7 @@
 
 = Download =
 
-You can download the latest JAR file (about 50KB+) including source code from here:
+You can download the latest JAR file (about 32KB) and source code from here:
 
 [http://code.google.com/p/jopenid/downloads/list]
 
