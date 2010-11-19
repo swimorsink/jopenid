@@ -34,6 +34,10 @@ Then you can debug on local machine.
 
 The file `hosts` is under `C:\Windows\System32\drivers\etc` in Windows, and `/etc/hosts` in Linux/UNIX.
 
+= Error when using non-standard port =
+
+You may failed to login by OpenID if your web application runs on non-standard port (e.g. 8080). Many OpenID providers only allow standard port (http 80 and https 443). So make sure your web application runs on 80 port.
+
 = I saw some web sites allow users enter their emails or URLs to find the OP's sign on page =
 
 Yes OpenID standards contains two parts: *discovery* and *authentication*. Discovery is the process where the RP uses email or URL to look up the address of OP. 
