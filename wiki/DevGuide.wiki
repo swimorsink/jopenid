@@ -6,7 +6,7 @@ JOpenID is used in web application to enable users sign on by OpenID standards.
 
 This demonstration shows how to use JOpenID in a Servlet to handle user's sign on request. 
 
-This sample Servlet can be found [http://code.google.com/p/jopenid/source/browse/trunk/JOpenId/src/org/expressme/openid/MainServlet.java here].
+This sample Servlet can be found [http://code.google.com/p/jopenid/source/browse/trunk/src/test/java/org/expressme/openid/MainServlet.java here].
 
 {{{
 @Override
